@@ -1,20 +1,20 @@
-public class MyApp : Gtk.Application {
-    private string pathToBackup = "/";
-    private string backupPath = "/home/padman";
+public class MainView : Gtk.Grid {
+    private string pathToBackup = "/home/padman/TestToBackup/";
+    private string backupPath = "/home/padman/";
 
-    public MyApp () {
-        Object (
-            application_id: "com.github.yourusername.yourrepositoryname",
-            flags: ApplicationFlags.FLAGS_NONE
-        );
+    construct {    
+        orientation = Gtk.Orientation.VERTICAL;
+        margin_bottom = 12;
+
+        var main_grid = new Gtk.Grid ();
+        main_grid.margin = 24;
+        main_grid.column_spacing = 12;
+        main_grid.row_spacing = 12;
+        
+        add(main_grid);
     }
 
-    protected override void activate () {
-        var main_window = new Gtk.ApplicationWindow (this);
-        main_window.window_position = Gtk.WindowPosition.CENTER;
-        main_window.default_height = 300;
-        main_window.default_width = 640;
-        main_window.title = "McFly's Time Machine";
+    /*protected override void activate () {
         try {
             // Either directly from a file ...
             main_window.icon = new Gdk.Pixbuf.from_file ("../data/icons/mcfly-backup-128.png");
@@ -22,19 +22,19 @@ public class MyApp : Gtk.Application {
             stderr.printf ("Could not load application icon: %s\n", e.message);
         }
 
-        var welcome_screen = new Granite.Widgets.Welcome ("Go back in time !", "Configure your backup space.");
+        var welcome_screen = new Granite.Widgets.Welcome (_("Go back in time !"), _("Configure your backup space."));
         
-        welcome_screen.append("drive-removable-media", "Choose a backup destination", "Select a storage device for your backup");
+        welcome_screen.append("drive-removable-media", _("Choose a backup destination"), _("Select a storage device for your backup"));
         
         welcome_screen.activated.connect ((index) => {
             switch (index) {
                 case 0:
                     try {
-                        var file_chooser = new Gtk.FileChooserDialog ("Select Music Folder", main_window,
+                        var file_chooser = new Gtk.FileChooserDialog (_("Select Music Folder"), main_window,
                                                                       Gtk.FileChooserAction.SELECT_FOLDER,
-                                                                      "Cancel",
+                                                                      _("Cancel"),
                                                                       Gtk.ResponseType.CANCEL,
-                                                                      "Open",
+                                                                      _("Open"),
                                                                       Gtk.ResponseType.ACCEPT);
         
                         file_chooser.set_local_only (true);
@@ -47,6 +47,8 @@ public class MyApp : Gtk.Application {
                             folder = file_chooser.get_filename ();
         
                         file_chooser.destroy ();
+                        
+                        Posix.system("rsnapshot hourly");
                     } catch (Error e) {
                         warning (e.message);
                     }
@@ -63,5 +65,5 @@ public class MyApp : Gtk.Application {
     public static int main (string[] args) {
         var app = new MyApp ();
         return app.run (args);
-    }
+    }*/
 }
