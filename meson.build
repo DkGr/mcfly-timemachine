@@ -1,7 +1,6 @@
 project(
-    'mcflys-timemachine',
-    'vala', 'c',
-    version: '0.1.0'
+    'com.github.DkGr.mcflys-timemachine',
+    'vala', 'c'
 )
 
 gettext_name = meson.project_name() + '-plug'

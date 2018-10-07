@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Your Name <nocteau@icloud.com> -->
+​<component type="addon">
+    <id>com.github.DkGr.mcflys-timemachine</id>
+    <extends>org.gnome.gedit.desktop</extends>
+    <name>McFly's Time Machine</name>
+    <summary>Backup and Restore your system</summary>
+    <description>
+        <p>McFly's Time Machine easily allows you to go back in time to restore your system at a previous state.</p>
+    </description>
+    ​<url type="homepage">https://github.com/DkGr/mcflys-timemachine</url>
+    ​<metadata_license>CC0-1.0</metadata_license>
+    ​<project_license>GPL-3.0+</project_license>
+​</component>
