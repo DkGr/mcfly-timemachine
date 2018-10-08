@@ -1,0 +1,29 @@
+#: data/com.github.DkGr.mcflys-timemachine.desktop.in:3
+#: data/com.github.DkGr.mcflys-timemachine.appdata.xml.in:6
+msgid "McFly's Time Machine"
+msgstr "McFly's Time Machine"
+
+#: data/com.github.DkGr.mcflys-timemachine.desktop.in:4
+msgid "Backup and Restore"
+msgstr "Sauvegarder et Restaurer"
+
+#: data/com.github.DkGr.mcflys-timemachine.desktop.in:5
+#: data/com.github.DkGr.mcflys-timemachine.appdata.xml.in:7
+msgid "Backup and Restore your system"
+msgstr "Sauvegardez et Restaurez votre systme"
+
+#: data/com.github.DkGr.mcflys-timemachine.desktop.in:8
+msgid "application-default-icon"
+msgstr "application-default-icon"
+
+#: data/com.github.DkGr.mcflys-timemachine.desktop.in:11
+msgid "Backup;Restore;Save;"
+msgstr "Sauvegarder;Restaurer;"
+
+#: data/com.github.DkGr.mcflys-timemachine.appdata.xml.in:9
+msgid ""
+"McFly's Time Machine easily allows you to go back in time to restore your "
+"system at a previous state."
+msgstr ""
+"McFly's Time Machine vous permet facilement de remonter le temps afin de "
+"restaurer votre  un tat antrieur."
