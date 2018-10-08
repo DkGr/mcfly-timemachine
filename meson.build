@@ -3,20 +3,38 @@ project(
     'vala', 'c'
 )
 
-gettext_name = meson.project_name() + '-plug'
-gnome = import('gnome')
 i18n = import('i18n')
 
-add_project_arguments(
-    '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
-    language:'c'
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
+
+# Create a new executable, list the files we want to compile, list the dependencies we need, and install
+executable(
+    meson.project_name(),
+    'src/MainView.vala',
+    dependencies: [
+        dependency('gtk+-3.0'),
+        dependency('granite')
+    ],
+    install: true
 )
 
-dbus_dep = dependency('dbus-1')
-glib_dep = dependency('glib-2.0')
-gio_dep = dependency('gio-2.0')
-polkit_dep = dependency('polkit-gobject-1')
+#Translate and install our .desktop file
+i18n.merge_file(
+input: join_paths('data', meson.project_name() + '.desktop.in'),
+output: meson.project_name() + '.desktop',
+po_dir: join_paths(meson.source_root(), 'po'),
+type: 'desktop',
+install: true,
+install_dir: join_paths(get_option('datadir'), 'applications')
+)
 
-subdir('src')
-subdir('data')
+#Translate and install our .appdata file
+i18n.merge_file(
+input: join_paths('data', meson.project_name() + '.appdata.xml.in'),
+output: meson.project_name() + '.appdata.xml',
+po_dir: join_paths(meson.source_root(), 'po'),
+install: true,
+install_dir: join_paths(get_option('datadir'), 'metainfo')
+)
+
 subdir('po')
