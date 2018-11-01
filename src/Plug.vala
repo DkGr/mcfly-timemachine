@@ -34,7 +34,7 @@ namespace BackupRestore {
 
         public override Gtk.Widget get_widget () {
             var settings = new BackupRestore.Backend.Settings ();
-            var widget = new BackupRestore.Widgets.GeneralSection (settings);
+            var widget = new BackupRestore.Widgets.MainView (settings);
 
             load_settings ();
 
