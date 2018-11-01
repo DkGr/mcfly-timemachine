@@ -1,4 +1,4 @@
-project('BackupRestore', 'vala', 'c')
+project('com.github.dkgr.mcflys-timemachine', 'vala', 'c')
 
 gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')

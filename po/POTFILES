@@ -1,4 +1,2 @@
 src/Plug.vala
 src/Backend/Settings.vala
-src/Widgets/GeneralSection.vala
-src/Widgets/SettingLabel.vala
