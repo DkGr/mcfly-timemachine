@@ -1,4 +1,4 @@
-# BackupRestore
+# McFly's Time Machine
 
 ## Install, build and run
 
@@ -6,9 +6,9 @@
 # install elementary-sdk, meson and libswitchboard
 sudo apt install elementary-sdk meson libswitchboard-2.0-dev 
 # clone repository
-git clone {{repourl}} BackupRestore
+git clone {{repourl}} mcflys-timemachine
 # cd to dir
-cd BackupRestore
+cd mcflys-timemachine
 # run meson
 meson build --prefix=/usr
 # cd to build, build and test
@@ -25,8 +25,8 @@ pkill switchboard -9
 cd build
 
 # generates pot file
-sudo ninja BackupRestore-pot
+sudo ninja mcflys-timemachine-pot
 
 # to regenerate and propagate changes to every po file
-sudo ninja BackupRestore-update-po
+sudo ninja mcflys-timemachine-update-po
 ```
