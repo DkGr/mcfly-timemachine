@@ -1,7 +1,6 @@
 plug_files = files(
     'Backend/Settings.vala',
-    'Plug.vala',
-    'Widgets/MainView.vala'
+    'Plug.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
