@@ -30,6 +30,7 @@ namespace BackupRestore.Widgets {
             Object (
                 icon_name: "com.github.DkGr.mcfyls-timemachine.png",
                 title: _("Backup & Restore"),
+                description: _("Configure your computer to periodically backup your files and restore them to a choosen date and time"),
                 activatable: true
             );
         }
@@ -43,7 +44,8 @@ namespace BackupRestore.Widgets {
                 switch (index) {
                     case 0:
                         try {
-                            var file_chooser = new Gtk.FileChooserDialog (_("Select a Backup Folder"), this,
+                            var gtkWidget = this as Gtk.Widget;
+                            var file_chooser = new Gtk.FileChooserDialog (_("Select a Backup Folder"), null ,
                                                                           Gtk.FileChooserAction.SELECT_FOLDER,
                                                                           _("Cancel"),
                                                                           Gtk.ResponseType.CANCEL,

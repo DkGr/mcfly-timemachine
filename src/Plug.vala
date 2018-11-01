@@ -22,6 +22,8 @@
 namespace BackupRestore {
     public class Plug : Switchboard.Plug {
 
+        private BackupRestore.Widgets.MainView main_view;
+
         public Plug () {
             var settings = new Gee.TreeMap<string, string?> (null, null);
             Object (category: Switchboard.Plug.Category.SYSTEM,
@@ -34,11 +36,11 @@ namespace BackupRestore {
 
         public override Gtk.Widget get_widget () {
             var settings = new BackupRestore.Backend.Settings ();
-            var widget = new BackupRestore.Widgets.MainView (settings);
+            if (main_view == null) {
+                main_view = new BackupRestore.Widgets.MainView (settings);
+            }
 
-            load_settings ();
-
-            return widget;
+            return main_view;
         }
 
         public override void shown () {
