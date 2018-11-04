@@ -19,9 +19,12 @@
 * Authored by: Padman <>
  */
 
-namespace BackupRestore.Backend { 
-    public class Settings : Granite.Services.Settings {
-        public Settings () {
+namespace BackupRestore.Backend {
+    public class BackupRestoreSettings : Granite.Services.Settings {
+        public bool backup_path_configured { get; set; }
+        public string backup_path { get; set; }
+
+        public BackupRestoreSettings () {
             base ("com.github.dkgr.mcflys-timemachine");
         }
     }

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
 	<schema path="/io/elementary/switchboard/backuprestore/" id="com.github.dkgr.mcflys-timemachine">
-
+    <key type="b" name="backup-path-configured">
+			<default>false</default>
+			<summary>Sets the backup path configuration state</summary>
+			<description></description>
+		</key>
+	  <key type="s" name="backup-path">
+			<default>''</default>
+			<summary>Sets the backup path</summary>
+			<description></description>
+		</key>
 	</schema>
 </schemalist>

@@ -1,5 +1,6 @@
 plug_files = files(
-    'Backend/Settings.vala',
+    'Backend/BackupRestoreSettings.vala',
+    'MainView.vala',
     'Plug.vala'
 )
 
