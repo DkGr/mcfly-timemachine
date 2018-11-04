@@ -22,11 +22,11 @@ namespace BackupRestore {
         public signal void settings_changed ();
 
         public MainView () {
-            load_settings();
             Object ();
         }
 
         construct {
+            load_settings();
             if(!backup_settings.backup_path_configured){
                 var welcome_screen = new Granite.Widgets.Welcome (_("Go back in time !"), _("Configure your backup space."));
 
@@ -36,7 +36,6 @@ namespace BackupRestore {
                     switch (index) {
                         case 0:
                             try {
-                                var gtkWidget = this as Gtk.Widget;
                                 var file_chooser = new Gtk.FileChooserDialog (_("Select a Backup Folder"), null ,
                                                                               Gtk.FileChooserAction.SELECT_FOLDER,
                                                                               _("Cancel"),
@@ -46,8 +45,6 @@ namespace BackupRestore {
 
                                 file_chooser.set_local_only (true);
                                 file_chooser.set_select_multiple (false);
-
-                                string? folder = null;
 
                                 if (file_chooser.run () == Gtk.ResponseType.ACCEPT){
                                     backup_settings.backup_path = file_chooser.get_filename ();

@@ -11,5 +11,10 @@
 			<summary>Sets the backup path</summary>
 			<description></description>
 		</key>
+	  <key type="as" name="backup-exclude-path">
+			<default>['/var/temp']</default>
+			<summary>List of all excluded backup path</summary>
+			<description></description>
+		</key>
 	</schema>
 </schemalist>
