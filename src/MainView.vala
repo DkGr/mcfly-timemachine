@@ -89,6 +89,12 @@ namespace BackupRestore {
             area_infobar.add (lock_button);
 
             add (permission_infobar);
+
+            var main_grid = new Gtk.Grid ();
+            main_grid.margin = 24;
+            main_grid.column_spacing = 12;
+            main_grid.row_spacing = 12;
+            add (main_grid);
             show_all();
         }
 

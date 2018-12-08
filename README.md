@@ -1,5 +1,8 @@
 # McFly's Time Machine
 
+## Description
+It's an elementary switchboard plug to manage backup of the elementary os system.
+
 ## Install, build and run
 
 ```bash

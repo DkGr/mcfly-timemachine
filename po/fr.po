@@ -7,8 +7,8 @@ msgid ""
 "Configure your computer to periodically backup your files and restore them "
 "to a choosen date and time"
 msgstr ""
-"Configurez votre systme afin de sauvegarder vos fichiers de faon periodique "
-"et restaurez-les  une date antrieur"
+"Configurez votre système afin de sauvegarder vos fichiers de façon periodique "
+"et restaurez-les à une date antérieur"
 
 #: src/MainView.vala:43
 msgid "Go back in time !"
@@ -24,7 +24,7 @@ msgstr "Choisissez une destination de sauvegarde"
 
 #: src/MainView.vala:44
 msgid "Select a storage device for your backup"
-msgstr "Selectionnez un priphrique de stockage pour votre sauvegarde"
+msgstr "Selectionnez un périphérique de stockage pour votre sauvegarde"
 
 #: src/MainView.vala:49
 msgid "Select a Backup Folder"
@@ -40,4 +40,4 @@ msgstr "OK"
 
 #: src/MainView.vala:82
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "La modifications de certains paramètres nécessite les droits d'administrateur"
