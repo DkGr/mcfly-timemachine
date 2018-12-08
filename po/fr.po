@@ -1,39 +1,43 @@
-#: src/Plug.vala:34
+#: src/Plug.vala:29
 msgid "Backup & Restore"
 msgstr "Sauvegarde & Restauration"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:30
 msgid ""
 "Configure your computer to periodically backup your files and restore them "
 "to a choosen date and time"
 msgstr ""
-"Configurez votre systme afin de sauvegarder vos fichiers de façon periodique "
-"et restaurez-les à une date antérieur"
+"Configurez votre systme afin de sauvegarder vos fichiers de faon periodique "
+"et restaurez-les  une date antrieur"
 
-#: src/Plug.vala:43
+#: src/MainView.vala:43
 msgid "Go back in time !"
 msgstr "Remontez dans le temps !"
 
-#: src/Plug.vala:43
+#: src/MainView.vala:43
 msgid "Configure your backup space."
 msgstr "Configurez votre espace de sauvegarde"
 
-#: src/Plug.vala:45
+#: src/MainView.vala:44
 msgid "Choose a backup destination"
 msgstr "Choisissez une destination de sauvegarde"
 
-#: src/Plug.vala:45
+#: src/MainView.vala:44
 msgid "Select a storage device for your backup"
-msgstr "Selectionnez un périphérique de stockage pour votre sauvegarde"
+msgstr "Selectionnez un priphrique de stockage pour votre sauvegarde"
 
-#: src/Plug.vala:52
+#: src/MainView.vala:49
 msgid "Select a Backup Folder"
 msgstr "Selectionnez un dossier pour votre sauvegarde"
 
-#: src/Plug.vala:54
+#: src/MainView.vala:51
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/Plug.vala:56
+#: src/MainView.vala:53
 msgid "OK"
 msgstr "OK"
+
+#: src/MainView.vala:82
+msgid "Some settings require administrator rights to be changed"
+msgstr ""

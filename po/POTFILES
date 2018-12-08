@@ -1,2 +1,3 @@
 src/Plug.vala
-src/Backend/Settings.vala
+src/MainView.vala
+src/Backend/BackupRestoreSettings.vala

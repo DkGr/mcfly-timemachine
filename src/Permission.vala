@@ -19,13 +19,20 @@
 * Authored by: Padman <>
  */
 
-namespace BackupRestore.Backend {
-    public class BackupRestoreSettings : Granite.Services.Settings {
-        public bool backup_path_configured { get; set; }
-        public string backup_path { get; set; }
+namespace BackupRestore {
+    public static Polkit.Permission? permission = null;
 
-        public BackupRestoreSettings () {
-            base ("com.github.dkgr.mcflys-timemachine");
+    public static Polkit.Permission? get_permission () {
+        if (permission != null) {
+            return permission;
+        }
+
+        try {
+            permission = new Polkit.Permission.sync ("io.elementary.switchboard.backuprestore", new Polkit.UnixProcess (Posix.getpid ()));
+            return permission;
+        } catch (Error e) {
+            critical (e.message);
+            return null;
         }
     }
 }

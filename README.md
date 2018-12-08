@@ -4,7 +4,7 @@
 
 ```bash
 # install elementary-sdk, meson and libswitchboard
-sudo apt install elementary-sdk meson libswitchboard-2.0-dev 
+sudo apt install elementary-sdk meson libswitchboard-2.0-dev libpolkit-gobject-1-dev
 # clone repository
 git clone {{repourl}} mcflys-timemachine
 # cd to dir
@@ -25,8 +25,8 @@ pkill switchboard -9
 cd build
 
 # generates pot file
-sudo ninja mcflys-timemachine-pot
+ninja com.github.dkgr.mcflys-timemachine-pot
 
 # to regenerate and propagate changes to every po file
-sudo ninja mcflys-timemachine-update-po
+ninja com.github.dkgr.mcflys-timemachine-update-po
 ```

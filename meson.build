@@ -8,6 +8,8 @@ i18n = import('i18n')
 # Set our translation domain
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
+polkit_dep = dependency('polkit-gobject-1')
+
 subdir('src')
 subdir('data')
 subdir('po')
