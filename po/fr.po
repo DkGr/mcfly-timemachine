@@ -7,37 +7,54 @@ msgid ""
 "Configure your computer to periodically backup your files and restore them "
 "to a choosen date and time"
 msgstr ""
-"Configurez votre système afin de sauvegarder vos fichiers de façon periodique "
-"et restaurez-les à une date antérieur"
+"Configurez votre systme afin de sauvegarder vos fichiers de faon periodique "
+"et restaurez-les  une date antrieur"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:45
 msgid "Go back in time !"
 msgstr "Remontez dans le temps !"
 
-#: src/MainView.vala:43
+#: src/MainView.vala:45
 msgid "Configure your backup space."
 msgstr "Configurez votre espace de sauvegarde"
 
-#: src/MainView.vala:44
+#: src/MainView.vala:46
 msgid "Choose a backup destination"
 msgstr "Choisissez une destination de sauvegarde"
 
-#: src/MainView.vala:44
+#: src/MainView.vala:46
 msgid "Select a storage device for your backup"
-msgstr "Selectionnez un périphérique de stockage pour votre sauvegarde"
+msgstr "Selectionnez un priphrique de stockage pour votre sauvegarde"
 
-#: src/MainView.vala:49
+#: src/MainView.vala:51
 msgid "Select a Backup Folder"
 msgstr "Selectionnez un dossier pour votre sauvegarde"
 
-#: src/MainView.vala:51
+#: src/MainView.vala:53
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/MainView.vala:53
+#: src/MainView.vala:55
 msgid "OK"
 msgstr "OK"
 
-#: src/MainView.vala:82
+#: src/MainView.vala:84
 msgid "Some settings require administrator rights to be changed"
-msgstr "La modifications de certains paramètres nécessite les droits d'administrateur"
+msgstr ""
+"La modifications de certains paramtres ncessite les droits d'administrateur"
+
+#: src/Widgets/CategoryItem.vala:35
+msgid "Enabled"
+msgstr "Activé"
+
+#: src/Widgets/CategoryItem.vala:39
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: src/Widgets/CategoryItem.vala:43
+msgid "Partially Enabled"
+msgstr "Partiellement activé"
+
+#: src/Widgets/CategoryList.vala:32
+msgid "Backup"
+msgstr "Sauvegarder"

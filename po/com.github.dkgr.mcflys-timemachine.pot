@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.dkgr.mcflys-timemachine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-08 18:46+0100\n"
+"POT-Creation-Date: 2018-12-08 19:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,34 +27,50 @@ msgid ""
 "to a choosen date and time"
 msgstr ""
 
-#: src/MainView.vala:43
+#: src/MainView.vala:45
 msgid "Go back in time !"
 msgstr ""
 
-#: src/MainView.vala:43
+#: src/MainView.vala:45
 msgid "Configure your backup space."
 msgstr ""
 
-#: src/MainView.vala:44
+#: src/MainView.vala:46
 msgid "Choose a backup destination"
 msgstr ""
 
-#: src/MainView.vala:44
+#: src/MainView.vala:46
 msgid "Select a storage device for your backup"
 msgstr ""
 
-#: src/MainView.vala:49
+#: src/MainView.vala:51
 msgid "Select a Backup Folder"
 msgstr ""
 
-#: src/MainView.vala:51
+#: src/MainView.vala:53
 msgid "Cancel"
 msgstr ""
 
-#: src/MainView.vala:53
+#: src/MainView.vala:55
 msgid "OK"
 msgstr ""
 
-#: src/MainView.vala:82
+#: src/MainView.vala:84
 msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: src/Widgets/CategoryItem.vala:35
+msgid "Enabled"
+msgstr ""
+
+#: src/Widgets/CategoryItem.vala:39
+msgid "Disabled"
+msgstr ""
+
+#: src/Widgets/CategoryItem.vala:43
+msgid "Partially Enabled"
+msgstr ""
+
+#: src/Widgets/CategoryList.vala:32
+msgid "Backup"
 msgstr ""

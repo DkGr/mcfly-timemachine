@@ -1,3 +1,5 @@
 src/Plug.vala
 src/MainView.vala
 src/Backend/BackupRestoreSettings.vala
+src/Widgets/CategoryItem.vala
+src/Widgets/CategoryList.vala

@@ -19,9 +19,11 @@
 * Authored by: Padman <>
  */
 namespace BackupRestore {
-    public class MainView : Granite.SettingsPage {
+    public class MainView : Gtk.Grid {
         private BackupRestore.Backend.BackupRestoreSettings backup_settings;
         private string pathToBackup = "/home/padman/FakeRoot/";
+
+        Widgets.CategoryList category_list;
 
         public signal void settings_changed ();
 
@@ -31,6 +33,9 @@ namespace BackupRestore {
 
         construct {
             load_settings();
+        }
+
+        public void DisplayScreen(){
             if(!backup_settings.backup_path_configured){
                 DisplayWelcomeScreen();
             }
@@ -88,13 +93,26 @@ namespace BackupRestore {
             var area_infobar = permission_infobar.get_action_area () as Gtk.Container;
             area_infobar.add (lock_button);
 
-            add (permission_infobar);
 
-            var main_grid = new Gtk.Grid ();
-            main_grid.margin = 24;
-            main_grid.column_spacing = 12;
-            main_grid.row_spacing = 12;
-            add (main_grid);
+            var stack = new Gtk.Stack ();
+
+            var grid = new Gtk.Grid ();
+            grid.attach (stack, 0, 3, 1, 1);
+
+            category_list = new Widgets.CategoryList ();
+
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+            paned.position = 200;
+            paned.add1 (category_list);
+            paned.add2 (grid);
+
+            this.add (paned);
+
+            category_list.row_selected.connect ((row) => {
+                var title = ((Widgets.CategoryItem)row).title;
+                stack.visible_child_name = title;
+            });
+
             show_all();
         }
 

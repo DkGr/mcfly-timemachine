@@ -2,7 +2,9 @@ plug_files = files(
     'Backend/BackupRestoreSettings.vala',
     'MainView.vala',
     'Plug.vala',
-    'Permission.vala'
+    'Permission.vala',
+    'Widgets/CategoryItem.vala',
+    'Widgets/CategoryList.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
