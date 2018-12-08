@@ -6,7 +6,7 @@
 # install elementary-sdk, meson and libswitchboard
 sudo apt install elementary-sdk meson libswitchboard-2.0-dev libpolkit-gobject-1-dev
 # clone repository
-git clone {{repourl}} mcflys-timemachine
+git clone https://github.com/DkGr/mcflys-timemachine.git mcflys-timemachine
 # cd to dir
 cd mcflys-timemachine
 # run meson
