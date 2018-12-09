@@ -4,7 +4,8 @@ plug_files = files(
     'Plug.vala',
     'Permission.vala',
     'Widgets/CategoryItem.vala',
-    'Widgets/CategoryList.vala'
+    'Widgets/CategoryList.vala',
+    'Widgets/BackupPanel.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
@@ -20,7 +21,7 @@ shared_module(
         dependency('gtk+-3.0'),
         switchboard_dep,
         dependency('polkit-gobject-1'),
-        meson.get_compiler('vala').find_library('posix'),
+        meson.get_compiler('vala').find_library('posix')
     ],
     install: true,
     install_dir : join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'system')

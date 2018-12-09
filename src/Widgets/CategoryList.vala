@@ -29,9 +29,11 @@ namespace BackupRestore.Widgets {
         }
 
         construct {
-            var privacy_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine", "tracking", _("Backup"));
+            var backup_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine", "tracking", _("Backup"));
+            var restore_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine", "tracking", _("Restore"));
 
-            add_category (privacy_item);
+            add_category (backup_item);
+            add_category (restore_item);
         }
 
         private void update_category_status (CategoryItem category_item, bool category_status) {
