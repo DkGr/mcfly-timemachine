@@ -24,6 +24,7 @@ namespace BackupRestore {
         private string pathToBackup = "/home/padman/FakeRoot/";
 
         private const string BACKUP_PANEL = "backup_panel";
+        private const string RESTORE_PANEL = "restore_panel";
 
         Widgets.CategoryList category_list;
 
@@ -103,6 +104,9 @@ namespace BackupRestore {
 
             var backupPanel = new Widgets.BackupPanel ();
             stack.add_titled (backupPanel, BACKUP_PANEL, _("Backup"));
+
+            var restorePanel = new Widgets.RestorePanel ();
+            stack.add_titled (restorePanel, RESTORE_PANEL, _("Restore"));
 
             category_list = new Widgets.CategoryList ();
 

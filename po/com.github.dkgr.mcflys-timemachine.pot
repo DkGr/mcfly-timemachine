@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.dkgr.mcflys-timemachine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-08 19:43+0100\n"
+"POT-Creation-Date: 2019-01-06 19:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,53 +17,63 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Plug.vala:29
+#: src/Plug.vala:31
 msgid "Backup & Restore"
 msgstr ""
 
-#: src/Plug.vala:30
+#: src/Plug.vala:32
 msgid ""
 "Configure your computer to periodically backup your files and restore them "
 "to a choosen date and time"
 msgstr ""
 
-#: src/MainView.vala:45
+#: src/MainView.vala:51
 msgid "Go back in time !"
 msgstr ""
 
-#: src/MainView.vala:45
+#: src/MainView.vala:51
 msgid "Configure your backup space."
 msgstr ""
 
-#: src/MainView.vala:46
+#: src/MainView.vala:52
 msgid "Choose a backup destination"
 msgstr ""
 
-#: src/MainView.vala:46
+#: src/MainView.vala:52
 msgid "Select a storage device for your backup"
 msgstr ""
 
-#: src/MainView.vala:51
+#: src/MainView.vala:57
 msgid "Select a Backup Folder"
 msgstr ""
 
-#: src/MainView.vala:53
+#: src/MainView.vala:59
 msgid "Cancel"
 msgstr ""
 
-#: src/MainView.vala:55
+#: src/MainView.vala:61
 msgid "OK"
 msgstr ""
 
-#: src/MainView.vala:84
+#: src/MainView.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 
-#: src/Widgets/CategoryItem.vala:35
+#: src/MainView.vala:106 src/Widgets/CategoryList.vala:32
+msgid "Backup"
+msgstr ""
+
+#: src/MainView.vala:109 src/Widgets/CategoryList.vala:33
+msgid "Restore"
+msgstr ""
+
+#: src/Widgets/CategoryItem.vala:35 src/Widgets/BackupPanel.vala:78
+#: src/Widgets/RestorePanel.vala:72
 msgid "Enabled"
 msgstr ""
 
-#: src/Widgets/CategoryItem.vala:39
+#: src/Widgets/CategoryItem.vala:39 src/Widgets/BackupPanel.vala:82
+#: src/Widgets/RestorePanel.vala:76
 msgid "Disabled"
 msgstr ""
 
@@ -71,6 +81,42 @@ msgstr ""
 msgid "Partially Enabled"
 msgstr ""
 
-#: src/Widgets/CategoryList.vala:32
-msgid "Backup"
+#: src/Widgets/BackupPanel.vala:28 src/Widgets/RestorePanel.vala:28
+#, c-format
+msgid ""
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:30 src/Widgets/BackupPanel.vala:50
+msgid "Backup settings"
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:36 src/Widgets/RestorePanel.vala:36
+#, c-format
+msgid "%s won't retain any further usage data."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:37 src/Widgets/RestorePanel.vala:37
+msgid "The additional functionality that this data provides will be affected."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:38 src/Widgets/RestorePanel.vala:38
+msgid ""
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:41
+msgid "Backup Is Disabled"
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:61 src/Widgets/RestorePanel.vala:55
+msgid "Your system"
+msgstr ""
+
+#: src/Widgets/RestorePanel.vala:30 src/Widgets/RestorePanel.vala:44
+msgid "Restore settings"
 msgstr ""

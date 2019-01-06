@@ -1,60 +1,107 @@
-#: src/Plug.vala:29
+#: src/Plug.vala:31
 msgid "Backup & Restore"
 msgstr "Sauvegarde & Restauration"
 
-#: src/Plug.vala:30
+#: src/Plug.vala:32
 msgid ""
 "Configure your computer to periodically backup your files and restore them "
 "to a choosen date and time"
 msgstr ""
-"Configurez votre systme afin de sauvegarder vos fichiers de faon periodique "
-"et restaurez-les  une date antrieur"
+"Configurez votre sysètme afin de sauvegarder vos fichiers de façon periodique "
+"et restaurez-les à une date antérieur"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:51
 msgid "Go back in time !"
 msgstr "Remontez dans le temps !"
 
-#: src/MainView.vala:45
+#: src/MainView.vala:51
 msgid "Configure your backup space."
 msgstr "Configurez votre espace de sauvegarde"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:52
 msgid "Choose a backup destination"
 msgstr "Choisissez une destination de sauvegarde"
 
-#: src/MainView.vala:46
+#: src/MainView.vala:52
 msgid "Select a storage device for your backup"
-msgstr "Selectionnez un priphrique de stockage pour votre sauvegarde"
+msgstr "Selectionnez un périphérique de stockage pour votre sauvegarde"
 
-#: src/MainView.vala:51
+#: src/MainView.vala:57
 msgid "Select a Backup Folder"
 msgstr "Selectionnez un dossier pour votre sauvegarde"
 
-#: src/MainView.vala:53
+#: src/MainView.vala:59
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/MainView.vala:55
+#: src/MainView.vala:61
 msgid "OK"
 msgstr "OK"
 
-#: src/MainView.vala:84
+#: src/MainView.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
-"La modifications de certains paramtres ncessite les droits d'administrateur"
+"La modifications de certains paramètres nécessite les droits d'administrateur"
 
-#: src/Widgets/CategoryItem.vala:35
+#: src/MainView.vala:106 src/Widgets/CategoryList.vala:32
+msgid "Backup"
+msgstr "Sauvegarder"
+
+#: src/MainView.vala:109 src/Widgets/CategoryList.vala:33
+msgid "Restore"
+msgstr "Restaurer"
+
+#: src/Widgets/CategoryItem.vala:35 src/Widgets/BackupPanel.vala:78
+#: src/Widgets/RestorePanel.vala:72
 msgid "Enabled"
 msgstr "Activé"
 
-#: src/Widgets/CategoryItem.vala:39
+#: src/Widgets/CategoryItem.vala:39 src/Widgets/BackupPanel.vala:82
+#: src/Widgets/RestorePanel.vala:76
 msgid "Disabled"
-msgstr "Désactivé"
+msgstr "Dsactivé"
 
 #: src/Widgets/CategoryItem.vala:43
 msgid "Partially Enabled"
 msgstr "Partiellement activé"
 
-#: src/Widgets/CategoryList.vala:32
-msgid "Backup"
-msgstr "Sauvegarder"
+#: src/Widgets/BackupPanel.vala:28 src/Widgets/RestorePanel.vala:28
+#, c-format
+msgid ""
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:30 src/Widgets/BackupPanel.vala:50
+msgid "Backup settings"
+msgstr "Paramètres de sauvegarde"
+
+#: src/Widgets/BackupPanel.vala:36 src/Widgets/RestorePanel.vala:36
+#, c-format
+msgid "%s won't retain any further usage data."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:37 src/Widgets/RestorePanel.vala:37
+msgid "The additional functionality that this data provides will be affected."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:38 src/Widgets/RestorePanel.vala:38
+msgid ""
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
+msgstr ""
+
+#: src/Widgets/BackupPanel.vala:41
+#, fuzzy
+msgid "Backup Is Disabled"
+msgstr "La sauvegarde est désactivée"
+
+#: src/Widgets/BackupPanel.vala:61 src/Widgets/RestorePanel.vala:55
+msgid "Your system"
+msgstr "Votre système"
+
+#: src/Widgets/RestorePanel.vala:30 src/Widgets/RestorePanel.vala:44
+msgid "Restore settings"
+msgstr "Paramètres de restauration"
