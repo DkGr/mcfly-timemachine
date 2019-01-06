@@ -26,8 +26,8 @@ namespace BackupRestore.Widgets {
             Object (
                 activatable: true,
                 description: _("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (get_operating_system_name ()),
-                icon_name: "document-open-recent",
-                title: _("History")
+                icon_name: "com.github.dkgr.mcflys-timemachine.drive",
+                title: _("Backup settings")
             );
         }
 
@@ -38,7 +38,7 @@ namespace BackupRestore.Widgets {
                 _("This may not prevent apps from recording their own usage data, such as browser history.")
             ));
 
-            var alert = new Granite.Widgets.AlertView (_("History Is Disabled"), description, "");
+            var alert = new Granite.Widgets.AlertView (_("Backup Is Disabled"), description, "");
             alert.show_all ();
 
             var description_frame = new Gtk.Frame (null);
@@ -47,7 +47,7 @@ namespace BackupRestore.Widgets {
 
             status_switch.active = true;
 
-            var clear_data = new Gtk.ToggleButton.with_label (_("Clear History…"));
+            var clear_data = new Gtk.ToggleButton.with_label (_("Backup settings"));
             clear_data.notify["active"].connect (() => {
 
             });

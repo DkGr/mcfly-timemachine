@@ -29,8 +29,8 @@ namespace BackupRestore.Widgets {
         }
 
         construct {
-            var backup_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine", "tracking", _("Backup"));
-            var restore_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine", "tracking", _("Restore"));
+            var backup_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine.drive", "backup_panel", _("Backup"));
+            var restore_item = new CategoryItem ("com.github.dkgr.mcflys-timemachine", "restore_panel", _("Restore"));
 
             add_category (backup_item);
             add_category (restore_item);

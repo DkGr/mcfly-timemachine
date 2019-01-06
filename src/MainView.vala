@@ -23,6 +23,8 @@ namespace BackupRestore {
         private BackupRestore.Backend.BackupRestoreSettings backup_settings;
         private string pathToBackup = "/home/padman/FakeRoot/";
 
+        private const string BACKUP_PANEL = "backup_panel";
+
         Widgets.CategoryList category_list;
 
         public signal void settings_changed ();
@@ -46,7 +48,7 @@ namespace BackupRestore {
 
         private void DisplayWelcomeScreen(){
             var welcome_screen = new Granite.Widgets.Welcome (_("Go back in time !"), _("Configure your backup space."));
-            welcome_screen.append("drive-removable-media", _("Choose a backup destination"), _("Select a storage device for your backup"));
+            welcome_screen.append("com.github.dkgr.mcflys-timemachine.drive", _("Choose a backup destination"), _("Select a storage device for your backup"));
             welcome_screen.activated.connect ((index) => {
                 switch (index) {
                     case 0:
@@ -97,7 +99,10 @@ namespace BackupRestore {
             var stack = new Gtk.Stack ();
 
             var grid = new Gtk.Grid ();
-            grid.attach (stack, 0, 3, 1, 1);
+            grid.attach (stack, 0, 0, 1, 1);
+
+            var backupPanel = new Widgets.BackupPanel ();
+            stack.add_titled (backupPanel, BACKUP_PANEL, _("Backup"));
 
             category_list = new Widgets.CategoryList ();
 
@@ -105,8 +110,10 @@ namespace BackupRestore {
             paned.position = 200;
             paned.add1 (category_list);
             paned.add2 (grid);
+            paned.set_vexpand(true);
 
             this.add (paned);
+            this.set_vexpand(true);
 
             category_list.row_selected.connect ((row) => {
                 var title = ((Widgets.CategoryItem)row).title;
